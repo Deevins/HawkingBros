@@ -1,0 +1,142 @@
+.introduce {
+	margin-bottom: 64px;
+	@media (max-width: 768px) {
+		margin-bottom: 32px;
+	}
+	@media (max-width: 320px) {
+		margin-bottom: 36px;
+	}
+
+	// .introduce__title
+	&__title {
+		margin-bottom: 41px;
+		@media (max-width: 768px) {
+			margin-bottom: 21px;
+		}
+	}
+
+	// .introduce__breadcrumb
+	&__breadcrumb {
+		margin-bottom: 81px;
+		@media (max-width: 768px) {
+			margin-bottom: 60px;
+		}
+		@media (max-width: 320px) {
+			margin-bottom: 16px;
+		}
+	}
+
+	// .introduce__description
+	&__description {
+		.purple-highlite {
+			font-weight: 600;
+		}
+		margin-bottom: 47px;
+		@media (max-width: 768px) {
+			margin-bottom: 16px;
+		}
+	}
+
+	// .introduce__benefit
+	&__benefit {
+		display: flex;
+	}
+}
+
+.benefit {
+	// .benefit__list
+	&__list {
+		flex-shrink: 0;
+		@media (max-width: 320px) {
+			flex-shrink: 1;
+		}
+	}
+
+	// .benefit__title
+	&__title {
+		.purple-highlite {
+			font-weight: 700;
+			text-transform: uppercase;
+			@media (max-width: 768px) {
+				font-size: 40px;
+				line-height: 52px;
+			}
+			@media (max-width: 320px) {
+				font-size: 30px;
+				line-height: 37px;
+			}
+		}
+		margin-bottom: 39px;
+		@media (max-width: 768px) {
+			margin-bottom: 21px;
+		}
+	}
+
+	// .benefit__item
+	&__item {
+		display: flex;
+		list-style-type: none;
+		margin-left: 45px;
+		line-height: 24px;
+		font-weight: 400;
+		font-size: 16px;
+		color: #000;
+		margin-bottom: 25px;
+
+		@media (max-width: 767px) {
+			margin-left: 22px;
+		}
+		@media (max-width: 320px) {
+			margin-left: 20px;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&::before {
+			content: " ";
+			display: block;
+			color: transparent;
+			border-radius: 50%;
+			background-color: $carrot;
+			width: 9px;
+			height: 9px;
+			min-width: 9px;
+			min-height: 9px;
+			margin-right: 17px;
+			line-height: 24px;
+			font-size: 16px;
+			transform: translateY(7px);
+		}
+		@media (max-width: 320px) {
+			font-size: 14px;
+			line-height: 24px;
+		}
+	}
+}
+
+.composite {
+	flex-shrink: 0;
+	background-image: url("../../assets/images/Blob.png");
+	max-width: 766px;
+	max-height: 573px;
+	width: 766px;
+	height: 573px;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: contain;
+	overflow: visible;
+
+	transform: translateX(46px);
+
+	&__dimohod {
+		position: relative;
+		top: -28px;
+		left: 179px;
+	}
+
+	@media (max-width: 768px) {
+		display: none;
+	}
+}

@@ -1,0 +1,49 @@
+html,
+body {
+	font-family: Montserrat;
+	font-size: 14px;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+.header-container {
+	width: 100%;
+	max-width: 1815px;
+	padding: 0 15px;
+	margin: 0 auto;
+
+	@media (max-width: 768px) {
+		padding: 0;
+		max-width: 738px;
+		margin: 0 15px;
+	}
+	@media (max-width: 320px) {
+		max-width: 290px;
+	}
+}
+
+.container {
+	width: 100%;
+	max-width: 1221px;
+	margin: 0 auto;
+	@media (max-width: 768px) {
+		margin: 0;
+		padding: 0 15px;
+	}
+	@media (max-width: 320px) {
+		margin: 0;
+	}
+}
