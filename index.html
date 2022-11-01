@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Second hometask</title>
+    <title>AJAX homework</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+    <div style="display:flex;flex-direction:row;">
+        <div class="page-wrapper">
+            <p>Введите свое имя пользователя на GitHub</p>
+            <form>
+                <input class="input-name js-input" type="text" name="name" placeholder="Введите свое имя GitHub">
+                <button class="load-button js-load"> Загрузить данные </button>
+            </form>
     
+            <div class="results-container js-results">
+    
+            </div>
+        </div>
+    
+        <div class="page-wrapper page-list-wrapper">
+            <p>Нажмите на кнопку, чтобы получить список пользователей.</p>
+            <button class="load-button load-list-btn js-fetch"> Запрос пользователей </button>
+
+            <div class="results-container results-list-container js-fetch-results">
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </body>
+
+
 </html>
