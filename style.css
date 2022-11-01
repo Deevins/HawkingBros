@@ -1,30 +1,17 @@
 .page-wrapper {
-  height: 91vh;
-  width: 50%;
-  background-color: #bfd9eb;
+  height: 100vh;
+  background-color: #f3f6f9;
   padding: 30px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  border:1px red solid;
-
 }
-
-.page-wrapper:first-child{
-  margin-right:5px;
-}
-
-.page-list-wrapper p {
-  font-weight: 500;
-  margin-bottom:6em;
-  text-align: center;
-
-}
-
 
 form {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .input-name {
@@ -41,6 +28,23 @@ form {
   padding: 16.5px 14px;
   margin-right: 20px;
   border-radius: 8px;
+} 
+
+.input-error-container{
+  width: 28%;
+  background: rgba(206, 205, 205, 0.116);
+  border-radius: 5%;
+  height: fit-content;
+  text-align: center;
+  padding:5px 10px;
+}
+.input-error-container > p{
+  font-weight: 600;
+}
+
+.input-error{
+  
+  border: 1px red solid !important;
 }
 
 .load-button {
@@ -67,13 +71,6 @@ form {
   color: rgb(255, 255, 255);
 }
 
-.load-list-btn{
-  position: absolute;
-  left:70.2%;
-  top:9.5%;
-
-}
-
 .load-button:hover {
   background-color: rgb(0, 89, 178);
   box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px,
@@ -87,20 +84,10 @@ form {
   border-radius: 8px;
   border: 1px solid rgb(229, 232, 236);
   overflow: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
   display: flex;
   flex-direction: column;
   padding: 15px;
-}
-
-.results-list-item {
-  border: 1px rgba(112, 3, 255, 0.781) solid;
-  border-radius: 10px;
-  margin-bottom: 50px;
-}
-
-.results-list-item > p {
-  margin-bottom: 10px;
 }
 
 .response-container {
@@ -113,8 +100,6 @@ form {
   width: 100%;
   max-width: 200px;
   height: auto;
-  border: 1px black solid;
-  padding:2px;
   border-radius: 16px;
   margin-bottom: 10px;
 }
